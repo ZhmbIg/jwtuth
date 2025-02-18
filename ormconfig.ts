@@ -8,7 +8,7 @@ export const AppDataSource = new DataSource({
   host: process.env.DB_HOST || 'localhost',
   port: Number(process.env.DB_PORT) || 5000,
   username: process.env.DB_USER || 'nestuser',
-  password: process.env.DB_PASSWORD || '123',
+  password: process.env.DB_PASSWORD || 'nestpassword',
   database: process.env.DB_NAME || 'nestdb',
   entities: ['dist/**/*.entity.js'],
   migrations: ['dist/migrations/*.js'],
